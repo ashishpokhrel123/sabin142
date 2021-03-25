@@ -18,9 +18,14 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+Route::get('/admin',[App\Http\Controllers\AdminController::class, 'adminPanel']);
+Route::get('/addcategory', [App\Http\Controllers\AdminController::class, 'addsubCategory']);
+Route::get('/addabout',[App\Http\Controllers\AdminController::class, 'addAbout']);
+Route::get('/addservice', [App\Http\Controllers\AdminController::class, 'addService']);
+Route::get('/addmember', [App\Http\Controllers\AdminController::class, 'addMember']);
+Route::get('/addservice', [App\Http\Controllers\AdminController::class, 'addService'] );
+Route::post('/addmember', [App\Http\Controllers\MemberController::class, 'addMember'] );
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/addcategory', [App\Http\Controllers\CategoryController::class, 'addCategory']);
 Route::post('/addservice', [App\Http\Controllers\ServiceController::class, 'addService']);
-Route::get('/addservice', [App\Http\Controllers\CategoryController::class, 'index']);
-Route::get('/services', [App\Http\Controllers\ServiceController::class, 'index']);
+Route::get('/service', [App\Http\Controllers\CategoryController::class, 'index']);

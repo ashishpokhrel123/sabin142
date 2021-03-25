@@ -23,13 +23,11 @@ class ServiceController extends Controller
                 'description' => 'required'
             ]);
             Service::insert([
-                'name' => $request->name,
-                'description' => $request->description,
-                'category_id' => $request->category_id
+                'add_service' => $request->name,
+                'service_description' => $request->description,
+                'service_category' => $request->category_id
             ]);
-            return response()->json([
-              "message" => "Service created"
-            ], 201);
+            return redirect('/admin');
 
 
         } catch (\Throwable $th) {

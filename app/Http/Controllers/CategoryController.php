@@ -17,12 +17,13 @@ class CategoryController extends Controller
     {
        try {
            $category = $request->validate([
-               'name' => 'required'
+               'service_category' => 'required'
            ]);
-           Category::insert($category);
-           return response()->json([
-              "message" => "Category created"
-            ], 201);
+           
+           Category::insert([
+               'name' => $request->service_category,
+           ]);
+           return redirect('/admin');
        } catch (\Throwable $e) {
            dd($e);
            

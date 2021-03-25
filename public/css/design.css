@@ -1,0 +1,400 @@
+#navbar
+{
+    background-color: #045ca4;
+   
+    
+    
+}
+.nav-item dropdown
+{
+    background-color:  #045ca4;
+}
+#navbar  ul li
+{
+     margin:5px;   
+}
+#navbar ul li a
+{
+    color:white;
+    background-color:  #045ca4;
+}
+#navbar img
+{
+    height:80px;
+    width:80px;
+}
+.footer
+{
+    background-color: #045ca4;
+    width:100%;
+
+}
+.footer ul li a
+{
+    color:white;
+}
+.footer span 
+{
+    color:white;
+}
+.footer h5
+{
+    color:white;
+}
+#app
+{
+    width:100%;
+}
+.icon
+{
+    height:100px;
+    width:100px;
+}
+#logincontainer
+{
+    margin:20px;
+}
+.text-line {
+    background-color: transparent;
+    color:blue;
+    outline: none;
+    outline-style: none;
+    outline-offset: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid grey 2px;
+    padding: 10px 70px;
+    
+}
+
+#password
+{
+    margin-left:-100px;
+}
+
+#login
+{
+    margin:15px;
+    margin-right: 0px;
+    border-radius: 2em;
+    margin-left:-20px;
+}
+#logincard
+{
+    height:350px;
+    width:350px;
+}
+#registercard
+{
+   
+    border-radius: 2em;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
+   
+   
+    
+}
+#addmovie
+{
+    margin-left:150px;
+    margin-top:15px;
+    
+}
+.carousel slide
+{
+    height:300px;
+}
+.movies {
+    position: relative;
+    margin-top: 0px;
+    width:100%;
+    height: 400px;
+    float:left;
+   /* box-shadow: black 5px 5px 5px;*/
+   /* margin-left:200px;*/
+    
+  }
+ 
+ 
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  }
+ 
+  .movies:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+  }
+  
+  #movies_image {
+    position: absolute;
+    width: 320px;
+    height: 310px;
+    left: 0;
+    transition: .5s ease;
+  backface-visibility: hidden;
+  }
+  #movies_img
+  {
+    height:200px;
+    width:300px;
+    float:right;
+    margin-top:-50px;
+  }
+  .movies:hover  #movies_img {
+    opacity: 0.9;
+  }
+  
+  .title {
+ 
+    margin-top: 320px;
+    /*font-weight: 700;*/
+    font-size: 15px;
+    margin-left:50px;
+  
+    /*text-transform: uppercase;*/
+    color:red;
+ 
+  }
+  
+  .movies:hover .movies_image {
+    opacity: 0.3;
+  }
+  
+  .button {
+    position: absolute;
+    margin-right: 0px;
+    border-radius: 2em;
+    margin-left:-20px;
+    width: 300px;
+    border-radius: 45%;
+    top: 180px;
+    text-align: center;
+    opacity: 0;
+   
+    
+    transition: opacity .2s ease;
+  }
+  
+  .button a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color:white;
+    border: solid 2px white;
+    z-index: 1;
+  }
+  
+  .movies:hover .button {
+    opacity: 1;
+  }
+   
+  .bottomright {
+    position: absolute;
+    bottom: 80px;
+    margin-left:230px;
+    font-size: 18px;
+    border-radius: 50%;
+    border:1px solid orange;
+    height:80px;
+    width:80px;
+    text-align: center;
+    background: white;
+  }
+
+  #holder{
+    height:500px;
+    width:900px;
+    background-color:none;
+  /*  border:1px solid #A4A4A4;
+    border-radius: 5%;*/
+    margin-left:10px;
+    margin-top:-50px;
+    }
+    #seatname
+    {
+      height:10px;
+      width:10px;
+    }
+    #place {
+    position:relative;
+    margin:100px;
+    }
+    #place a{
+    font-size:0.6em;
+    display: none;
+    margin-radius:20%;
+    }
+    #place li
+    {
+     /*list-style: none outside none;*/
+     position: absolute;
+     margin:10px;
+     margin-radius:20%;
+    }
+    #place li:hover
+    {
+   
+    }
+    #place .seat{
+    background-color:green;
+    height:33px;
+    width:33px;
+    display:block;
+    }
+    #place .selectedSeat
+    {
+    background-color: red;
+    }
+    #place .selectingSeat
+    {
+  
+    }
+    
+    #place .row-3, #place .row-4{
+    margin-top:10px;
+    }
+    #seatDescription
+    {
+       margin-top:-100px;
+    }
+    .Available
+    {
+        height:20px;
+        width:20px;
+        background-color:green;
+        border-radius:20%;
+    }
+    .Available li
+    {
+      
+       list-style: none;
+       width:100px;
+       margin-left:40px;
+    
+    }
+    .Booked
+    {
+        height:20px;
+        width:20px;
+        background-color:red;
+        border-radius:20%;
+        margin-left:200px;
+        margin-top:-20px;
+       
+    }
+    .Booked li
+    {
+      
+        list-style: none;
+        width:100px;
+        margin-left:40px;
+    
+    }
+   .YourSeat
+   {
+    height:20px;
+    width:20px;
+    background-color:yellow;
+    border-radius:20%;
+    margin-left:400px;
+    margin-top:-20px;
+   
+   }
+   .YourSeat li
+   {
+  
+    
+    list-style: none;
+    width:100px;
+    margin-left:40px;
+    
+   }
+   #btn
+   {
+       margin-left:20px;
+       margin-top:-20px;
+       
+   }
+   
+.reserve
+   {  
+       
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+     border-radius: 50%;
+       
+
+   }
+.time
+{
+    border:1px solid red;
+    float:left;
+    margin-left:20px;
+    border:2em
+}
+/* for mobile device and tablet*/
+@media only screen AND (MAX-WIDTH:500px)
+{
+    
+    #logincontainer
+    {
+        margin:20px;
+    }
+    .text-line {
+        background-color: transparent;
+        color:blue;
+        outline: none;
+        outline-style: none;
+        outline-offset: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid grey 2px;
+        padding: 10px 70px;
+        
+    }
+    
+    #password
+    {
+        margin:0px;
+        margin-left: 40px;
+    }
+    
+    #login
+    {
+        margin:15px;
+        margin-right: 0px;
+        border-radius: 2em;
+        margin-left:-20px;
+    }
+    #logincard
+    {
+        height:350px;
+        width:350px;
+    }
+    #registercard
+    {
+       
+        border-radius: 2em;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
+       height:400px;
+       
+    }
+    #addmovie
+{
+    margin-left:0px;
+
+}
+    }
